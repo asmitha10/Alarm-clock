@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fontawesome.com/search?q=delete&o=r">
+    <link rel="stylesheet" href="alarm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="timer-display">00:00:00</div>
+        <div class="container">
+          <div class="inputs">
+            <input
+              type="number"
+              id="hourInput"
+              placeholder="00"
+              min="0"
+              max="23"
+            />
+            <input
+              type="number"
+              id="minuteInput"
+              placeholder="00"
+              min="0"
+              max="59"
+            />
+            <input type="number" id="secondsInput" placeholder="00" min="0" max="59">
+          </div>
+          <button id="set">Add Alarm</button>
+          <div class="activeAlarms"></div>
+      </div>
+      <script src="alarm.js"></script>
+</body>
+</html>
